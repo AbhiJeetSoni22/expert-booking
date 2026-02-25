@@ -36,7 +36,6 @@ io.on("connection", (socket) => {
 app.use(cors());
 app.use(express.json());
 
-// Routes
 app.use("/api/experts", expertRoutes);
 app.use("/api/bookings", bookingRoutes);
 
