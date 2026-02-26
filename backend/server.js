@@ -21,7 +21,6 @@ const io = new Server(server, {
   },
 });
 
-// Store io globally (so controllers can access it)
 app.set("io", io);
 
 io.on("connection", (socket) => {
@@ -32,7 +31,6 @@ io.on("connection", (socket) => {
   });
 });
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
